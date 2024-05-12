@@ -1,0 +1,145 @@
+
+body{
+    background-color: rgba(243, 229, 216, 0.281);
+    max-width: 700;
+    margin-left: auto;
+    margin-right: auto;
+}
+.first{
+    max-width: 100%;
+    width: 48.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+img{
+    max-width: 100%; /*this lets image stay in container*/
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 650px;
+}
+
+.third{
+    margin-top: 20px;
+    background-color:rgba(243, 229, 216, 0.281);
+    padding-top: 8px;
+    padding-left: 30px;
+    padding-bottom: 7px;
+    border-radius: 15px;
+}
+h1{
+    font-family: young serif;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+h3{
+    font-family: outfit; 
+    color: rgb(124, 7, 66);
+    font-weight: 600;
+    margin-bottom: -8px;
+}
+h2{
+    font-family: young serif; 
+    color: rgb(124, 7, 66);
+    font-weight: 500;
+    margin-bottom: -8px;
+}
+ul{
+    list-style: none;
+    padding-left: 20px;
+    
+}
+ul li{
+    font-family: outfit;
+    padding-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+
+}
+ul li::before{
+    color: rgb(124, 7, 66);
+    content: ".";
+    font-size: 30px;
+    margin-right: 8px;
+    font-weight: 24px;
+    position: absolute;
+    left: -20px;
+    bottom: 9px;
+}
+ol{
+    list-style: none;
+    counter-reset: item;
+    padding-left: 20px;
+}
+ol li{
+    font-family: outfit;
+    padding-bottom: 10px;
+    position: relative;
+    padding-left: 20px; /* to add space between li and text */
+}
+ol li::before{
+    content: counter(item)".";
+    counter-increment: item;
+    left: -20px;
+    right: 100px;
+    position: absolute;
+    font-weight: bold;
+    color:rgb(124, 7, 66);
+}
+p{
+    font-family: outfit;
+}
+hr{
+    opacity: 20%;
+}
+
+.one, .two{
+    display: inline-block;
+    margin-bottom: -20px;
+}
+.one{
+    color: grey;
+    width: 65%;
+    text-align: left;
+    margin-left: 30px;
+}
+.two{
+    color:rgb(124, 7, 66);
+    font-weight: bold;
+    width: 25%;
+    margin-left: -120px;
+}
+
+@media (max-width: 768px) {
+    body{
+        background-color: white;
+       
+    }
+    img{
+        border-radius: 0px;
+        margin-left: -20px;
+        margin-top: -30px;
+        margin-right: -80px;
+        width: 110%;
+        height: auto;
+        max-width: 500px;
+
+    }
+    .first{
+        border-radius: 0px;
+        max-width: 90%;
+        width: 999px;
+        margin: 0 auto;
+    }
+    .third{
+        border-radius: 10px;
+    }
+    }
+
